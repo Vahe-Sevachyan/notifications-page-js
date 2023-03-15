@@ -31,4 +31,48 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  height: 90vh;
+}
+
+.main-container {
+  max-width: 1440px;
+  background-color: rgb(223, 191, 140);
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.notifications-container {
+  padding-top: 20px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+
+.msg-container {
+  margin-top: 20px;
+  background-color: rgb(207, 129, 28);
+  border-radius: 10px;
+}
+
+.msg-content {
+  display: flex;
+  align-items: center;
+}
+.msg-content .msg-img {
+  width: 70px;
 }/*# sourceMappingURL=style.css.map */

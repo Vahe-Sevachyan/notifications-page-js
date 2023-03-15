@@ -1,0 +1,14 @@
+.notifications-container {
+  padding-top: 20px;
+
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notifications-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
