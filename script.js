@@ -1,10 +1,28 @@
-const msgCounterNum = document.querySelector("sub");
+let msgCounterNum = document.getElementById("msgCounter");
 const markAllRead = document.querySelector("allRead-Header");
 const msgContainer = document.querySelectorAll(".msg-container");
 
-// const changeColor = () => {
-//   msgContainer.style.color = "red";
-// };
+//this function changes the color of unread messages
 msgContainer.forEach((msg) => {
   msg.addEventListener("click", () => msg.classList.toggle("msg-containers"));
 });
+
+//this function decreases the msg count
+msgContainer.forEach((msg) => {
+  msg.addEventListener("click", () => {
+    if (msg.classList.contains("msg-containers")) {
+      msgCounterNum.innerText = parseInt(msgCounterNum.innerText) - 1;
+    } else if (!msg.classList.contains("msg-containers")) {
+      msgCounterNum.innerText = parseInt(msgCounterNum.innerText) + 1;
+    }
+  });
+});
+
+markAllRead.addEventListener("click", allRead());
+const allRead = () => {
+  msgContainer.forEach((msg) => {
+    if (!msg.classList.contains("msg-containers")) {
+      msg.classList.toggle("msg-containers");
+    }
+  });
+};
