@@ -1,5 +1,5 @@
 let msgCounterNum = document.getElementById("msgCounter");
-const markAllRead = document.querySelector("allRead-Header");
+const markAllRead = document.querySelector(".allRead-Header");
 const msgContainer = document.querySelectorAll(".msg-container");
 
 //this function changes the color of unread messages
@@ -18,11 +18,11 @@ msgContainer.forEach((msg) => {
   });
 });
 
-markAllRead.addEventListener("click", allRead());
-const allRead = () => {
-  msgContainer.forEach((msg) => {
+msgContainer.forEach((msg) => {
+  markAllRead.addEventListener("click", () => {
     if (!msg.classList.contains("msg-containers")) {
       msg.classList.toggle("msg-containers");
     }
+    msgCounterNum.innerText = 0;
   });
-};
+});
