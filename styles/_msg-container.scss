@@ -1,16 +1,22 @@
 .msg-container {
   margin-top: 20px;
-  background-color: dodgerblue;
+  background-color: hsl(205, 33%, 90%);
   border-radius: 10px;
   transition: 0.5s all;
+  cursor: pointer;
+  padding: 20px;
 }
 .msg-content {
   display: flex;
   align-items: center;
   .msg-img {
-    width: 70px;
+    width: 50px;
+    padding-right: 10px;
   }
 }
 .msg-containers {
-  background-color: tomato;
+  background-color: hsl(0, 0%, 100%);
+}
+.userName {
+  margin-right: 10px;
 }

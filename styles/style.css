@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -33,41 +34,65 @@ img {
   height: auto;
 }
 
-main {
-  height: 90vh;
+body {
+  background-color: hsl(210, 60%, 98%);
 }
 
 .main-container {
+  padding-top: 1px;
   max-width: 1440px;
-  background-color: rgb(131, 121, 106);
-  height: 80vh;
+  background-color: hsl(0, 0%, 100%);
+  min-height: 93vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .notifications-container {
-  padding-top: 20px;
-  background-color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+}
+.notifications-container h2 {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+}
+.notifications-container sub {
+  font-family: "Plus Jakarta Sans";
+  padding: 3px 10px 3px 10px;
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 3px;
 }
 
 .counter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 190px;
+}
+
+.allRead-Header {
+  color: hsl(219, 14%, 63%);
+  font-family: "Plus Jakarta Sans";
+  cursor: pointer;
+}
+
+.allRead-Header:hover {
+  color: hsl(219, 85%, 26%);
+  transition: 0.5s all;
 }
 
 .msg-container {
   margin-top: 20px;
-  background-color: dodgerblue;
+  background-color: hsl(205, 33%, 90%);
   border-radius: 10px;
   transition: 0.5s all;
+  cursor: pointer;
+  padding: 20px;
 }
 
 .msg-content {
@@ -75,9 +100,14 @@ main {
   align-items: center;
 }
 .msg-content .msg-img {
-  width: 70px;
+  width: 50px;
+  padding-right: 10px;
 }
 
 .msg-containers {
-  background-color: tomato;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.userName {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

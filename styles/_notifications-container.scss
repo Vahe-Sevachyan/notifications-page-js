@@ -1,14 +1,32 @@
 .notifications-container {
-  padding-top: 20px;
-
-  background-color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  h2 {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+  }
+  sub {
+    font-family: "Plus Jakarta Sans";
+    padding: 3px 10px 3px 10px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    border-radius: 3px;
+  }
 }
 .counter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 190px;
+}
+.allRead-Header {
+  color: hsl(219, 14%, 63%);
+  font-family: "Plus Jakarta Sans";
+  cursor: pointer;
+}
+.allRead-Header:hover {
+  color: hsl(219, 85%, 26%);
+  transition: 0.5s all;
 }
