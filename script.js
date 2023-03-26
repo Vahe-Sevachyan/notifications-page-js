@@ -8,15 +8,6 @@ msgContainer.forEach((msg) => {
   msg.addEventListener("click", () => msg.classList.toggle("msg-containers"));
 });
 
-// console.log(redDot);
-// msgContainer.addEventListener("click", () => {
-//   redDot.forEach((dot) => {
-//     dot.classList.toggle("red-dots");
-//   });
-// });
-
-// redDot.classList.toggle("red-dots")
-
 //this function decreases the msg count when messages are marked as read
 msgContainer.forEach((msg) => {
   msg.addEventListener("click", () => {
