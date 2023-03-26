@@ -6,6 +6,24 @@
   cursor: pointer;
   padding: 20px;
 }
+.msg-containers {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.red-dot {
+  background-color: hsl(1, 90%, 64%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.red-dots {
+  background-color: hsl(0, 0%, 100%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
 .msg-content {
   display: flex;
   align-items: center;
@@ -14,9 +32,21 @@
     padding-right: 10px;
   }
 }
-.msg-containers {
-  background-color: hsl(0, 0%, 100%);
-}
 .userName {
   margin-right: 10px;
+  font-family: "Plus Jakarta Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  &:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+  }
+}
+.UIS {
+  color: hsl(219, 12%, 42%);
+  margin-right: 10px;
+}
+.userMsgTime {
+  color: hsl(219, 12%, 42%);
+  margin-top: 5px;
+  margin-left: 50px;
 }
